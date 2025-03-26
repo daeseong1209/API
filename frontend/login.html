@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - DC-Like</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">DC-Like</a>
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <h2 class="form-title">로그인</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">이메일</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%">로그인</button>
+        </form>
+        <p id="message" style="color: red; font-size: 13px; margin-top: 10px; text-align: center;"></p>
+        <p style="font-size: 13px; margin-top: 20px; text-align: center;">
+            아직 계정이 없으신가요? <a href="createUser.html" style="color: var(--main-blue);">회원가입</a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 - DC-Like</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">DC-Like</a>
+        </div>
+    </header>
+    
+    <div class="form-container">
+        <h2 class="form-title">회원가입</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="regEmail">이메일</label>
+                <input type="email" id="regEmail" placeholder="이메일 입력" required>
+            </div>
+            <div class="form-group">
+                <label for="regPassword">비밀번호</label>
+                <input type="password" id="regPassword" placeholder="비밀번호 입력" required>
+            </div>
+            <div class="form-group">
+                <label for="regPasswordConfirm">비밀번호 확인</label>
+                <input type="password" id="regPasswordConfirm" placeholder="비밀번호 다시 입력" required>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 20px;">가입하기</button>
+        </form>
+        <p id="regMessage" style="color: red; font-size: 13px; margin-top: 10px; text-align: center;"></p>
+        <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center;">
+            <p style="font-size: 13px; color: var(--gray);">
+                이미 계정이 있으신가요? 
+                <a href="login.html" style="color: var(--main-blue); text-decoration: none; font-weight: bold;">로그인</a>
+            </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
